@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coach Pocket Guide · Kingswood United FC</title>
+<meta name="description" content="Quick-reference guide for Kingswood United FC coaches and managers.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+  :root{
+    --ink:#241F1A; --paper:#FBF7F1; --surface:#FFFFFF; --surface-2:#F3ECE1;
+    --border:#E4D9C8; --amber:#F29100; --amber-deep:#C4740A; --amber-wash:#FCEBD2;
+    --text:#241F1A; --text-muted:#6B5F52; --critical:#B3261E; --critical-bg:#FBE9E7;
+    --critical-border:#E9C4BE; --chip-bg:#FFFFFF; --focus:#241F1A;
+    --shadow: 0 1px 2px rgba(36,31,26,0.06), 0 6px 16px rgba(36,31,26,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#F2ECE3; --paper:#161210; --surface:#1F1A15; --surface-2:#28211A;
+      --border:#3A3025; --amber:#FFB020; --amber-deep:#FFC85A; --amber-wash:#3A2A12;
+      --text:#F2ECE3; --text-muted:#B8AA98; --critical:#FF8A7A; --critical-bg:#3A1913;
+      --critical-border:#5C2A20; --chip-bg:#1F1A15;
+      --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 8px 20px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#F2ECE3; --paper:#161210; --surface:#1F1A15; --surface-2:#28211A;
+    --border:#3A3025; --amber:#FFB020; --amber-deep:#FFC85A; --amber-wash:#3A2A12;
+    --text:#F2ECE3; --text-muted:#B8AA98; --critical:#FF8A7A; --critical-bg:#3A1913;
+    --critical-border:#5C2A20; --chip-bg:#1F1A15;
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 8px 20px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--paper); color:var(--text); font-family:"Inter",system-ui,sans-serif; -webkit-font-smoothing:antialiased;}
+  h1,h2,h3,.display{font-family:"Oswald",system-ui,sans-serif; text-transform:uppercase; letter-spacing:0.01em; text-wrap:balance;}
+  .mono{font-family:"JetBrains Mono",ui-monospace,monospace;}
+  a{color:var(--amber-deep);}
+  .wrap{max-width:1120px; margin:0 auto; padding:0 20px 64px;}
+
+  header.top{
+    background:linear-gradient(180deg, #241F1A 0%, #000 130%);
+    color:#FBF7F1; padding:28px 20px 22px; border-bottom:4px solid var(--amber);
+  }
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) header.top{ background:linear-gradient(180deg,#0D0A08 0%,#000 140%);} }
+  :root[data-theme="dark"] header.top{ background:linear-gradient(180deg,#0D0A08 0%,#000 140%);}
+  header.top .inner{max-width:1080px; margin:0 auto;}
+  .eyebrow{font-family:"Oswald",system-ui,sans-serif; font-size:13px; letter-spacing:0.14em; color:var(--amber); text-transform:uppercase; margin:0 0 6px;}
+  header.top h1{font-size:clamp(28px,5vw,40px); margin:0 0 6px; font-weight:700; color:#FBF7F1;}
+  header.top p.sub{margin:0; color:#D8CFC3; font-size:15px; max-width:60ch; line-height:1.5;}
+
+  .controls{
+    position:sticky; top:0; z-index:5; background:var(--paper);
+    border-bottom:1px solid var(--border); padding:14px 20px; margin-bottom:6px;
+  }
+  .controls .inner{max-width:1080px; margin:0 auto; display:flex; flex-direction:column; gap:10px;}
+  .search{
+    display:flex; align-items:center; gap:8px; background:var(--surface);
+    border:1.5px solid var(--border); border-radius:10px; padding:9px 12px;
+  }
+  .search svg{flex:none; opacity:0.55;}
+  .search input{
+    border:none; outline:none; background:transparent; color:var(--text);
+    font-family:"Inter",system-ui,sans-serif; font-size:16px; width:100%;
+  }
+  .search input::placeholder{color:var(--text-muted);}
+  .chips{display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{
+    font-family:"Oswald",system-ui,sans-serif; font-size:12.5px; letter-spacing:0.03em; text-transform:uppercase;
+    border:1.5px solid var(--border); background:var(--chip-bg); color:var(--text-muted);
+    padding:6px 12px; border-radius:999px; cursor:pointer; transition:all .15s ease; user-select:none;
+  }
+  .chip:hover{border-color:var(--amber-deep); color:var(--text);}
+  .chip[aria-pressed="true"]{background:var(--ink); border-color:var(--ink); color:var(--paper);}
+  @media (max-width:640px){
+    .controls{padding:10px 0;}
+    .controls .search{margin:0 16px;}
+    .chips{flex-wrap:nowrap; overflow-x:auto; padding:0 16px 2px; scrollbar-width:none; -webkit-overflow-scrolling:touch;}
+    .chips::-webkit-scrollbar{display:none;}
+    .chip{flex:none;}
+    .wrap{padding:0 16px 48px;}
+  }
+
+  .safety{
+    margin:22px 0 8px; border:1.5px solid var(--critical-border); background:var(--critical-bg);
+    border-radius:14px; padding:16px 18px; display:flex; gap:14px; align-items:flex-start; box-shadow:var(--shadow);
+  }
+  .safety svg{flex:none; color:var(--critical); margin-top:2px;}
+  .safety .label{font-family:"Oswald",system-ui,sans-serif; font-size:12.5px; letter-spacing:0.1em; text-transform:uppercase; color:var(--critical); margin:0 0 3px;}
+  .safety h3{margin:0 0 4px; font-size:19px; color:var(--text);}
+  .safety p{margin:0; color:var(--text-muted); font-size:14px; line-height:1.5;}
+  .safety button{
+    font-family:"Oswald",system-ui,sans-serif; font-size:12.5px; text-transform:uppercase; letter-spacing:0.04em;
+    background:var(--critical); color:#fff; border:none; border-radius:8px; padding:9px 14px;
+    cursor:pointer; flex:none; align-self:center;
+  }
+  :root[data-theme="dark"] .safety button{color:#161210;}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .safety button{color:#161210;} }
+
+  section.grid-section{margin-top:22px;}
+  .section-label{font-family:"Oswald",system-ui,sans-serif; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:var(--text-muted); margin:0 0 12px; display:flex; align-items:center; gap:10px;}
+  .section-label::after{content:""; flex:1; height:1px; background:var(--border);}
+
+  .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr)); gap:14px; align-items:start;}
+  .card{
+    background:var(--surface); border:1.5px solid var(--border); border-radius:14px;
+    box-shadow:var(--shadow); overflow:hidden; transition:border-color .15s ease;
+  }
+  .card.open{border-color:var(--amber-deep);}
+  .card-head{
+    width:100%; text-align:left; background:none; border:none; cursor:pointer;
+    padding:16px 16px 14px; display:flex; gap:12px; align-items:flex-start; color:inherit; font:inherit;
+  }
+  .card-head:focus-visible{outline:2px solid var(--amber-deep); outline-offset:-2px;}
+  .icon-badge{
+    flex:none; width:38px; height:38px; border-radius:10px; background:var(--amber-wash);
+    display:flex; align-items:center; justify-content:center; font-size:18px;
+  }
+  .card-head .body{flex:1; min-width:0;}
+  .cat-label{font-family:"Oswald",system-ui,sans-serif; font-size:10.5px; letter-spacing:0.09em; text-transform:uppercase; color:var(--amber-deep); margin:0 0 3px;}
+  .card-head h3{font-family:"Inter",system-ui,sans-serif; text-transform:none; letter-spacing:0; font-size:16.5px; font-weight:700; margin:0 0 4px; line-height:1.3;}
+  .card-head p{margin:0; color:var(--text-muted); font-size:13.5px; line-height:1.45;}
+  .chev{flex:none; margin-top:8px; transition:transform .18s ease; color:var(--text-muted);}
+  .card.open .chev{transform:rotate(180deg); color:var(--amber-deep);}
+
+  .card-body{max-height:0; overflow:hidden; transition:max-height .22s ease;}
+  .card-body .inner{padding:14px 16px 18px 66px; border-top:1px solid var(--border);}
+  @media (max-width:480px){ .card-body .inner{padding-left:16px;} }
+  .card-body ul{margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:9px;}
+  .card-body li{font-size:14px; line-height:1.5; padding-left:16px; position:relative; overflow-wrap:anywhere;}
+  .card-body li::before{content:"—"; position:absolute; left:0; color:var(--amber-deep);}
+  .card-body li.has-table{padding-left:0;}
+  .card-body li.has-table::before{content:none;}
+  .card-body li b{font-weight:700;}
+  .card-body table{width:100%; border-collapse:collapse; margin:6px 0; font-size:13.5px;}
+  .card-body table th, .card-body table td{text-align:left; padding:5px 8px; border-bottom:1px solid var(--border); font-variant-numeric:tabular-nums;}
+  .card-body table th{font-family:"Oswald",system-ui,sans-serif; font-size:11px; letter-spacing:0.05em; text-transform:uppercase; color:var(--text-muted);}
+  .tip{margin:12px 0 0; font-size:13px; color:var(--text-muted); font-style:italic;}
+  .contact-line{
+    margin-top:12px; padding-top:12px; border-top:1px dashed var(--border);
+    font-size:13px; color:var(--text-muted); display:flex; flex-wrap:wrap; gap:6px 18px;
+  }
+  .contact-line a{font-weight:600; overflow-wrap:anywhere;}
+
+  .empty{text-align:center; padding:48px 20px; color:var(--text-muted);}
+  .empty h3{font-family:"Inter",system-ui,sans-serif; text-transform:none; letter-spacing:0; font-size:16px; margin:0 0 6px; color:var(--text);}
+
+  footer{max-width:1080px; margin:36px auto 0; padding:18px 0 0; border-top:1px solid var(--border); color:var(--text-muted); font-size:12.5px; line-height:1.6;}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="inner">
+    <p class="eyebrow">Kingswood United FC · Coach &amp; Manager Reference</p>
+    <h1>Coach Pocket Guide</h1>
+    <p class="sub">The Handbook, boiled down to what you actually need mid-week or on the touchline. Tap any card to open it — search or filter to get there faster.</p>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="inner">
+    <label class="search" for="search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input id="search" type="search" placeholder="Search e.g. “release a player”, “defibrillator”, “subs”…" autocomplete="off" aria-label="Search the pocket guide">
+    </label>
+    <div class="chips" id="chips" role="group" aria-label="Filter by topic"></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="safety" id="safetyCard">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4Z"/><line x1="12" y1="8" x2="12" y2="13"/><line x1="12" y1="16.5" x2="12" y2="16.51"/></svg>
+    <div style="flex:1">
+      <p class="label">Always here — Emergency &amp; Facilities</p>
+      <h3>999 emergency · Kinloss defibrillator code C159X</h3>
+      <p>Full site access codes, first-aid escalation and out-of-hours contacts.</p>
+    </div>
+    <button id="safetyBtn" type="button">Open</button>
+  </div>
+
+  <section class="grid-section">
+    <p class="section-label" id="resultLabel" aria-live="polite">All topics</p>
+    <div class="grid" id="grid"></div>
+    <div class="empty" id="empty" hidden>
+      <h3>No matches</h3>
+      <p>Try a different word, or clear the filter above.</p>
+    </div>
+  </section>
+
+  <footer>
+    Built from the Kingswood United FC Handbook (v2.1) and the Coach &amp; Volunteer Development Strategy. For anything not covered here, ask your Age Phase Lead, check My Club Hub, or email <a href="mailto:secretary@kingswoodunited.co.uk">secretary@kingswoodunited.co.uk</a>. This guide is a quick-reference summary, not a replacement for the full Handbook or club policies. Maintained by Tom Lee, Vice-Chair — last updated August 2026.
+  </footer>
+</div>
+
+<!-- All the guide's wording lives in topics.js. Edit that file to change content. -->
+<script src="topics.js"></script>
+<script>
+const CATS = [...new Set(DATA.map(d=>d.cat))];
+let activeCat = "All";
+let query = "";
+
+const chipsEl = document.getElementById("chips");
+const grid = document.getElementById("grid");
+const empty = document.getElementById("empty");
+const resultLabel = document.getElementById("resultLabel");
+const searchEl = document.getElementById("search");
+
+function renderChips(){
+  const cats = ["All", ...CATS];
+  chipsEl.innerHTML = "";
+  cats.forEach(c=>{
+    const b = document.createElement("button");
+    b.className = "chip"; b.type="button"; b.textContent = c;
+    b.setAttribute("aria-pressed", String(c===activeCat));
+    b.addEventListener("click", ()=>{ activeCat = c; render(); });
+    chipsEl.appendChild(b);
+  });
+}
+
+function plain(html){
+  const t = document.createElement("div");
+  t.innerHTML = html;
+  return t.textContent;
+}
+
+function matches(card){
+  const inCat = activeCat==="All" || card.cat===activeCat;
+  if(!inCat) return false;
+  if(!query) return true;
+  const hay = plain(card.title+" "+card.summary+" "+card.cat+" "+card.items.join(" ")+" "+(card.tip||"")).toLowerCase();
+  return hay.includes(query.trim().toLowerCase());
+}
+
+function cardEl(card){
+  const wrap = document.createElement("article");
+  wrap.className = "card";
+  wrap.id = "card-"+card.id;
+  const head = document.createElement("button");
+  head.className = "card-head"; head.type = "button";
+  head.setAttribute("aria-expanded","false");
+  head.innerHTML = `
+    <div class="icon-badge" aria-hidden="true">${card.icon}</div>
+    <div class="body">
+      <p class="cat-label">${card.cat}</p>
+      <h3>${card.title}</h3>
+      <p>${card.summary}</p>
+    </div>
+    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  `;
+  const bodyWrap = document.createElement("div");
+  bodyWrap.className = "card-body";
+  const inner = document.createElement("div");
+  inner.className = "inner";
+  const ul = document.createElement("ul");
+  card.items.forEach(it=>{
+    const li = document.createElement("li");
+    if(it.trim().startsWith("<table")) li.className = "has-table";
+    li.innerHTML = it;
+    ul.appendChild(li);
+  });
+  inner.appendChild(ul);
+  if(card.tip){
+    const tip = document.createElement("p");
+    tip.className = "tip";
+    tip.textContent = "Tip: " + card.tip;
+    inner.appendChild(tip);
+  }
+  if(card.contact){
+    const c = document.createElement("div");
+    c.className = "contact-line";
+    const a = document.createElement("a");
+    a.href = "mailto:" + card.contact;
+    a.textContent = card.contact;
+    c.append("✉️ ", a);
+    inner.appendChild(c);
+  }
+  bodyWrap.appendChild(inner);
+  head.addEventListener("click", ()=>{
+    const isOpen = wrap.classList.toggle("open");
+    head.setAttribute("aria-expanded", String(isOpen));
+    bodyWrap.style.maxHeight = isOpen ? bodyWrap.scrollHeight + "px" : "0px";
+  });
+  wrap.appendChild(head);
+  wrap.appendChild(bodyWrap);
+  return wrap;
+}
+
+function render(){
+  renderChips();
+  const list = DATA.filter(matches);
+  grid.innerHTML = "";
+  list.forEach(c=> grid.appendChild(cardEl(c)));
+  empty.hidden = list.length !== 0;
+  resultLabel.textContent = activeCat==="All" && !query ? `All topics (${DATA.length})` : `${list.length} match${list.length===1?"":"es"}`;
+}
+
+searchEl.addEventListener("input", (e)=>{ query = e.target.value; render(); });
+
+document.getElementById("safetyBtn").addEventListener("click", ()=>{
+  activeCat = "All"; query = ""; searchEl.value = "";
+  render();
+  requestAnimationFrame(()=>{
+    const critical = DATA.find(d=>d.critical);
+    const el = critical && document.getElementById("card-"+critical.id);
+    if(el){
+      const head = el.querySelector(".card-head");
+      if(!el.classList.contains("open")) head.click();
+      el.scrollIntoView({behavior:"smooth", block:"center"});
+    }
+  });
+});
+
+window.addEventListener("resize", ()=>{
+  document.querySelectorAll(".card.open .card-body").forEach(b=>{ b.style.maxHeight = b.scrollHeight + "px"; });
+});
+
+render();
+</script>
+</body>
+</html>
