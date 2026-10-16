@@ -29,7 +29,7 @@ const DATA = [
     items:[
       "<b>Step 1 —</b> Register for your FA Number (FAN) at learn.englandfootball.com",
       "<b>Step 2 —</b> Complete an Enhanced DBS check. You'll need two forms of ID (passport + driving licence, or one of those + a recent utility bill). Allow at least 5 weeks.",
-      "<b>Step 3 —</b> Complete three free, self-paced FA courses: Introduction to Coaching Football · Safeguarding Children · Introduction to First Aid in Football",
+      "<b>Step 3 —</b> Complete three free FA courses: <a href=\"https://learn.englandfootball.com/courses/football/introduction-to-coaching-football\">Introduction to Coaching Football</a> · <a href=\"https://learn.englandfootball.com/courses/safeguarding/safeguarding-children-course\">Safeguarding Children</a> · <a href=\"https://learn.englandfootball.com/courses/medical/introduction-to-first-aid-in-football\">Introduction to First Aid in Football</a>. See the “FA Courses &amp; Coaching Resources” card.",
       "<b>Step 4 —</b> Your League Secretary enrols you onto the Whole Game System and My Club Hub (MCH)",
       "<b>Step 5 —</b> Read the Club Vision, Mission and Coaching Philosophy — Handbook Section 1"
     ],
@@ -48,7 +48,7 @@ const DATA = [
       "<b>Breach of conduct / poor practice —</b> investigated by a neutral committee member. Staged response: warning → warning → warning + welfare referral → one-week suspension → dismissal.",
       "<b>Welfare support</b> (wellbeing, no safeguarding risk) — a Welfare Team member contacts you directly to help.",
       "<b>Mental health —</b> our role is Listen, Support, Signpost. Point of contact: the welfare team. Mind · YoungMinds · Childline 0800 1111 · Samaritans 116 123.",
-      "<b>Concussion —</b> \"If in doubt, sit them out.\" Remove immediately, get medically assessed, follow the full Graduated Return to Play protocol. No early return, even with parental consent.",
+      "<b>Concussion —</b> \"If in doubt, sit them out.\" Remove immediately, get medically assessed, follow the full Graduated Return to Play protocol. No early return, even with parental consent. Free course: <a href=\"https://learn.englandfootball.com/courses/medical/concussion-guidelines\">Concussion Guidelines</a>.",
       "<b>For parents and players —</b> share the <a href=\"https://kingswood-united-fc.github.io/safeguarding-hub/\">Safeguarding Hub</a>: who to tell, how to report, and every club policy."
     ],
     contact:"welfare@kingswoodunited.co.uk"
@@ -309,6 +309,27 @@ const DATA = [
       "<b>Development (ages 12–16)</b> — transition to 11v11; consolidate game-specific skills; introduce positional roles. This is peak-height-velocity age — mind the physical and psychological load.",
       "Every session, every age: <b>Fun · Excellence · Safe · Family · Inclusive.</b>"
     ]
+  },
+  {
+    id:"fa-learning", cat:"Philosophy & Support", icon:"🎓",
+    title:"FA Courses & Coaching Resources",
+    summary:"The courses you need to be a team's named coach, free extras we recommend, and where to find sessions and ideas.",
+    items:[
+      "<b>Required to be the named, qualified coach of a team:</b>",
+      "<a href=\"https://learn.englandfootball.com/courses/football/introduction-to-coaching-football\">Introduction to Coaching Football</a> — the starting point for every coach." ,
+      "<a href=\"https://learn.englandfootball.com/courses/medical/introduction-to-first-aid-in-football\">Introduction to First Aid in Football</a> — required alongside the coaching course." ,
+      "<a href=\"https://learn.englandfootball.com/courses/safeguarding/safeguarding-children-course\">Safeguarding Children</a> — required for anyone working with under-18s." ,
+      "<a href=\"https://learn.englandfootball.com/courses/safeguarding/safeguarding-children-course-recertification\">Safeguarding Children Recertification</a> — when your Safeguarding Children certificate is due to expire, renew it with this course so you stay qualified." ,
+      "<b>Free and recommended:</b>",
+      "<a href=\"https://learn.englandfootball.com/courses/safeguarding/safeguarding-for-all\">Safeguarding for All</a> — safeguarding awareness for every volunteer, not just coaches." ,
+      "<a href=\"https://learn.englandfootball.com/courses/medical/sudden-cardiac-arrest\">Sudden Cardiac Arrest</a> — how to spot and respond to a cardiac arrest, including using a defibrillator." ,
+      "<a href=\"https://learn.englandfootball.com/courses/medical/concussion-guidelines\">Concussion Guidelines</a> — the FA's concussion guidance: “If in doubt, sit them out.”" ,
+      "<b>Sessions, ideas and inspiration from England Football Learning:</b>",
+      "<a href=\"https://learn.englandfootball.com/sessions\">Coaching sessions</a> — ready-made coaching sessions by age and theme." ,
+      "<a href=\"https://learn.englandfootball.com/articles-and-resources/coaching\">Articles and resources</a> — articles and resources on coaching." ,
+      "<b>CoachCast —</b> watch on <a href=\"https://www.youtube.com/playlist?list=PLMR0ISTMOPTEQbqkhjI3J962-oY3Cb0I_\">YouTube</a> or listen on <a href=\"https://podcasts.apple.com/gb/podcast/coachcast/id1591804808\">Apple Podcasts</a>." 
+    ],
+    tip:"All courses are on England Football Learning. The club funds your first coaching qualification only; ask about the Coach Development Bursary for further courses."
   },
   {
     id:"support", cat:"Philosophy & Support", icon:"🤝",
