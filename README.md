@@ -24,7 +24,8 @@ Removing something later does not remove it from the history.
 | `topics.js` | All the wording: every card, bullet, tip and contact | Anyone updating content |
 | `index.html` | The page itself: layout, colours, search and filters | Only when the design changes |
 | `README.md` | This guide | When the process changes |
-| `pdf/` | Club Shop and Match Day Kit brochures and posters, linked from the Ordering Kit card | When a new season's brochures arrive |
+| `pdf/` | Documents people can read in the guide (kit brochures and posters) | When a new season's brochures arrive |
+| `docs/` | A preview image of every page of those PDFs, shown in the document viewer | Whenever a PDF changes |
 | `.nojekyll` | Tells GitHub to publish the files as they are | Leave alone |
 
 ## Updating the guide
@@ -37,6 +38,16 @@ Removing something later does not remove it from the history.
 To add a topic, copy an existing block from `{` to `},`, paste it where you want it to appear, and give it a new `id`.
 
 After any content change, update the "last updated" date in the footer of `index.html`.
+
+## Documents
+
+Documents open inside the guide with a preview of every page, and a Download PDF button. To add or replace one:
+
+1. Put the PDF in `pdf/` (for example `pdf/club-shop-brochure-2027-28.pdf`).
+2. Put one image per page in `docs/`, named the same with the page number: `club-shop-brochure-2027-28-1.webp`, `-2.webp` and so on. Claude can make these for you.
+3. Add or update its entry in the `DOCS` list at the bottom of `topics.js` (title, number of pages, one-line description).
+
+Any card link pointing at `pdf/<name>.pdf` then opens in the viewer. A document can be linked directly with `?doc=<name>`.
 
 ## Search
 

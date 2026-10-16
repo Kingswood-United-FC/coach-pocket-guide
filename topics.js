@@ -344,3 +344,22 @@ const DATA = [
     ]
   }
 ];
+
+/*
+  DOCUMENTS
+  =========
+  Documents people can read inside the guide. Each needs:
+    - the PDF in the pdf/ folder, named <id>.pdf
+    - one preview image per page in the docs/ folder, named <id>-1.webp, <id>-2.webp ...
+  Any link in a card that points to pdf/<id>.pdf opens the document here.
+*/
+const DOCS = [
+  { id:"club-shop-brochure-2026-27", title:"Club Shop Brochure 2026/27", pages:35, topic:"kit-orders",
+    about:"Every training and leisure item, with colours, sizes and junior and senior prices." },
+  { id:"club-shop-poster-2026-27", title:"Club Shop Poster 2026/27", pages:3, topic:"kit-orders",
+    about:"The Club Shop range on three A4 posters, with the QR code to order. Ideal for parents' groups." },
+  { id:"match-day-kit-brochure-2026-27", title:"Match Day Kit Brochure 2026/27", pages:10, topic:"kit-orders",
+    about:"Home, away, third and goalkeeper kits, what's included, sizes and prices." },
+  { id:"match-day-kit-poster-2026-27", title:"Match Day Kit Poster 2026/27", pages:1, topic:"kit-orders",
+    about:"One-page summary of match day kit prices and how to order, with the QR code." }
+];
