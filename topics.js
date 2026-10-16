@@ -106,10 +106,10 @@ const DATA = [
     title:"My Club Hub — Quick Nav",
     summary:"What it's for, and where to find the task you need.",
     items:[
-      "MCH covers team management, finances, communication, pitch &amp; fixture booking, player enrolment, consent, emergency info and automated subs.",
+      "MCH covers team management, finances, communication, player enrolment, consent, emergency info and automated subs.",
       "\"Officials\" (Manager, Coach, Assistant) get full access — a Committee Member enrols you.",
       "<b>Add a player</b> → Members List → Adding a Member",
-      "<b>Book a pitch</b> → Booking a Pitch",
+      "<b>Book a pitch</b> → no longer in MCH. See the “Booking a Pitch” card.",
       "<b>Check your team balance</b> → Profit &amp; Loss",
       "<b>See who has access to your team</b> → Officials List"
     ],
@@ -209,10 +209,34 @@ const DATA = [
     summary:"What's in a compliant first aid kit, and the rules on playing kit.",
     items:[
       "<b>First aid kit</b> (mandatory at every match and session): protective gloves, resus face shield, plasters, scissors, tweezers, tape, gauze, ice packs, crepe &amp; triangular bandages, trauma dressings, clinical waste bags, foil blanket, pen &amp; paper, spare injury report forms, sterile water pods, eye pads.",
-      "<b>Playing kit —</b> club supplier is Macron via Kingswood Sports CIO. No other brand without committee approval. No names on shirts, no duplicate numbers. Can take up to 12 weeks to arrive, so order early.",
-      "<b>Training kit —</b> not mandatory; club-branded wear is available from the club shop.",
+      "<b>Playing kit —</b> club supplier is Macron via Kingswood Sports CIO. No other brand without committee approval. No names on shirts, no duplicate numbers. Order through the online Match Day Kit form — see the “Ordering Kit” card.",
+      "<b>Training kit —</b> not mandatory; club-branded wear is available from the online Club Shop.",
       "<b>Match day extras (recommended) —</b> spare balls, whistle, stopwatch, bench, spare goalkeeper gloves and shin pads."
     ],
+    contact:"orders@kingswoodsports.co.uk"
+  },
+  {
+    id:"kit-orders", cat:"Equipment & Facilities", icon:"👕",
+    title:"Ordering Kit — Club Shop & Match Day Kit",
+    summary:"All Macron kit is ordered online now: no paper forms or chasing payments.",
+    items:[
+      "<b>Club Shop —</b> training and leisure wear, packs, socks and bags. <a href=\"https://script.google.com/a/macros/kingswoodsports.co.uk/s/AKfycbwRidNv-fpV17E9ObHoLboPDT8KPE-pAaCe7pixVafUVkfSuo_3bxdW__fZXz5S7fCA6g/exec\">Open the Club Shop</a>.",
+      "<b>Match Day Kit —</b> home (amber), away (white), third (blue) and goalkeeper (purple, green or sky blue / pink). <a href=\"https://script.google.com/a/macros/kingswoodsports.co.uk/s/AKfycbwRidNv-fpV17E9ObHoLboPDT8KPE-pAaCe7pixVafUVkfSuo_3bxdW__fZXz5S7fCA6g/exec?kit\">Open the Match Day Kit form</a>.",
+      "<table><thead><tr><th>Match day kit</th><th>Price</th></tr></thead><tbody>" +
+      "<tr><td>Full kit, junior (up to size S)</td><td>£35</td></tr>" +
+      "<tr><td>Full kit, senior (size M and up)</td><td>£42</td></tr>" +
+      "<tr><td>Shirt only (replacement)</td><td>£25</td></tr>" +
+      "<tr><td>Shorts only (replacement)</td><td>£12</td></tr></tbody></table>A full kit is shirt, shorts, socks and squad number. Sizes 3XS–5XL.",
+      "<b>Sponsors printed free</b> on match kit: front, back, both sleeves and both shorts legs. A £20 redraw fee applies only if the artwork isn't usable.",
+      "<b>Topping up a squad? —</b> choose “Match a previous order” on the form so the new kits match the team name and sponsor.",
+      "<b>Sleeves —</b> one sleeve length for all outfield shirts; goalkeepers choose their own.",
+      "<b>Club Shop extras —</b> initials or a number printed free on tops; sponsor logos £3–£5. Junior price up to size S, senior from size M.",
+      "<b>Ordering and paying —</b> order from your phone in a few minutes, any time. You get an instant confirmation email with a copy of your order, then updates when it's confirmed and when it's ready. Pay by bank transfer or straight from your team account.",
+      "<b>Collection —</b> all kit is collected from Kinloss. Samples are available to try on in the community room at Kinloss — just ask.",
+      "<b>Refunds —</b> customised kit and items are non-refundable, so check sizes before ordering.",
+      "<b>Share with parents —</b> Club Shop <a href=\"pdf/club-shop-brochure-2026-27.pdf\">brochure</a> and <a href=\"pdf/club-shop-poster-2026-27.pdf\">poster</a> · Match Day Kit <a href=\"pdf/match-day-kit-brochure-2026-27.pdf\">brochure</a> and <a href=\"pdf/match-day-kit-poster-2026-27.pdf\">poster</a>. Forward them to your parents' groups."
+    ],
+    tip:"Enquiries: Paul Richardson, 07775 916403.",
     contact:"orders@kingswoodsports.co.uk"
   },
   {
@@ -230,6 +254,19 @@ const DATA = [
     ]
   },
   {
+    id:"pitch-booking", cat:"Team, Players & Matchday", icon:"📅",
+    title:"Booking a Pitch",
+    summary:"How to request a pitch at Kinloss Garth, Winifred Holtby or Kingswood Academy, and check bookings.",
+    items:[
+      "<b>Request a pitch —</b> complete the <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSeHKep6g56JPJrKFT5KhBH0hxX9DrwWSpaQLyXVdrfD4TKucg/viewform\">Pitch Booking Request form</a> with your fixture details. It covers every venue we use.",
+      "<b>Use a real email address</b> on the form. You'll be emailed if the slot you've asked for isn't available.",
+      "<b>Check all bookings —</b> the <a href=\"https://docs.google.com/spreadsheets/d/14Ee9CpfDdUQYgjZyvv9kNTbeud_KtkTq1QUmhPYKQpo/edit?usp=sharing\">Pitch Bookings sheet</a> is read-only and shows every slot by venue, pitch and date.",
+      "<b>Status colours —</b> each fixture on the sheet is colour-coded as pending, confirmed or declined. Don't treat a slot as yours until it shows confirmed.",
+      "<b>Priority —</b> cup games take priority over league games, and league and cup games over friendlies. Teams are limited to 2 home friendlies in pre-season.",
+      "<b>Friendlies —</b> must still be sanctioned online first (see Match Day Essentials)."
+    ]
+  },
+  {
     id:"emergency", cat:"Equipment & Facilities", icon:"🚨", critical:true,
     title:"Emergency Action Plan",
     summary:"999, the defibrillator, ambulance access, and what to do in the first minutes.",
@@ -243,7 +280,7 @@ const DATA = [
       "<b>Thunder or lightning —</b> stop play, clear the pitches and shelter. Don't restart until 30 minutes after the last thunder or lightning.",
       "<b>Fire or evacuation —</b> call 999 and move everyone to the assembly point: the garages on Kinloss Garth, on the left outside the main gates. Take a head count against your register.",
       "<b>Kingswood Academy (HU7 4WD) —</b> call 999 and give the venue and postcode. Site managed by Robertson FM, 24/7 helpdesk 0141 739 0511.",
-      "<b>Bude Park Playing Fields —</b> call 999 and give the venue name. Site details to be added.",
+      "<b>Bude Park, Bude Road, HU7 6EF —</b> call 999 and give the park name and postcode. The park is reached from Bude Road or Ennerdale, so tell the call handler which entrance to come to.",
       "<b>Not life-threatening —</b> Bransholme Urgent Treatment Centre, Goodhart Road, HU7 4DW: 01482 344665 (X-ray has limited hours, so call ahead or ring 111) · Hull Royal Infirmary A&amp;E, Anlaby Road, HU3 2JZ, about 20 minutes by car · NHS 111 · Police non-emergency 101.",
       "<b>Afterwards —</b> tell the Health &amp; Safety Officer, Paul Richardson, the same day on 07775 916403. Complete an accident or incident report within 24 hours, including near misses. Don't share details in WhatsApp groups or on social media."
     ],

@@ -24,6 +24,7 @@ Removing something later does not remove it from the history.
 | `topics.js` | All the wording: every card, bullet, tip and contact | Anyone updating content |
 | `index.html` | The page itself: layout, colours, search and filters | Only when the design changes |
 | `README.md` | This guide | When the process changes |
+| `pdf/` | Club Shop and Match Day Kit brochures and posters, linked from the Ordering Kit card | When a new season's brochures arrive |
 | `.nojekyll` | Tells GitHub to publish the files as they are | Leave alone |
 
 ## Updating the guide
