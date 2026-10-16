@@ -129,7 +129,7 @@ const DATA = [
   {
     id:"squad-sizes", cat:"Team, Players & Matchday", icon:"📋",
     title:"Squad Size Guide",
-    summary:"Minimum and maximum squad numbers by age group.",
+    summary:"How many players you can have in a squad, by age group.",
     items:[
       "<table><thead><tr><th>Age Group</th><th>Min</th><th>Max</th></tr></thead><tbody>" +
       "<tr><td>U7, U8 &amp; U9</td><td>8</td><td>10</td></tr>" +

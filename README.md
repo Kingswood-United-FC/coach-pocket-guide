@@ -38,6 +38,18 @@ To add a topic, copy an existing block from `{` to `},`, paste it where you want
 
 After any content change, update the "last updated" date in the footer of `index.html`.
 
+## Search
+
+The search box shows a "Where to look" list: the best-matching cards, the exact line that matched, and relevant sections of the Safeguarding Hub. It understands everyday wording (for example "defib" finds the defibrillator, "ref" finds referee fees).
+
+- To teach it a new word, add it to the right group in the `SYNONYMS` list near the bottom of `index.html`.
+- To point it at a new Safeguarding Hub section, add an entry to `HUB_SECTIONS` in the same place.
+- Links to a search can be shared: add `?q=` to the address, e.g. `.../coach-pocket-guide/?q=book%20a%20pitch`.
+
+## Branding
+
+Colours and type follow the Kingswood United Brand Guide 2026: Solid Amber #F39200, Solid Black #1D1D1B, supplementary Red #FD4239 (emergencies). The brand font Gotham is licensed and can't be served on a public website, so the site uses Montserrat, its closest free equivalent. The crest is `img/crest.png` and must not be recoloured.
+
 ## Keeping it in step with other documents
 
 - The Handbook is the source of truth. If the Handbook changes, change the guide to match.

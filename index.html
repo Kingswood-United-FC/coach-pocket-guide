@@ -6,75 +6,67 @@
 <title>Coach Pocket Guide · Kingswood United FC</title>
 <meta name="description" content="Quick-reference guide for Kingswood United FC coaches and managers.">
 <meta name="robots" content="noindex">
+<link rel="icon" href="img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<!-- Brand font is Gotham (licensed). Montserrat is the closest free web substitute. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&display=swap">
 <style>
+  /* Brand: Solid Amber #F39200, Solid Black #1D1D1B, supplementary Red #FD4239 and Blue #009DC5.
+     Text is set in black, or white on dark backgrounds. Headlines at least 50% bigger than body copy. */
   :root{
-    --ink:#241F1A; --paper:#FBF7F1; --surface:#FFFFFF; --surface-2:#F3ECE1;
-    --border:#E4D9C8; --amber:#F29100; --amber-deep:#C4740A; --amber-wash:#FCEBD2;
-    --text:#241F1A; --text-muted:#6B5F52; --critical:#B3261E; --critical-bg:#FBE9E7;
-    --critical-border:#E9C4BE; --chip-bg:#FFFFFF; --focus:#241F1A;
-    --shadow: 0 1px 2px rgba(36,31,26,0.06), 0 6px 16px rgba(36,31,26,0.06);
+    --amber:#F39200; --black:#1D1D1B; --red:#FD4239; --blue:#009DC5;
+    --paper:#FFFFFF; --surface:#FFFFFF; --panel:#F7F5F2; --border:#E3DED6;
+    --text:#1D1D1B; --text-muted:#5A5650; --amber-wash:#FDEBD0;
+    --red-wash:#FFE8E6; --mark:#FFD58A; --chip-bg:#FFFFFF;
+    --shadow: 0 1px 2px rgba(29,29,27,0.06), 0 6px 16px rgba(29,29,27,0.06);
   }
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]){
-      --ink:#F2ECE3; --paper:#161210; --surface:#1F1A15; --surface-2:#28211A;
-      --border:#3A3025; --amber:#FFB020; --amber-deep:#FFC85A; --amber-wash:#3A2A12;
-      --text:#F2ECE3; --text-muted:#B8AA98; --critical:#FF8A7A; --critical-bg:#3A1913;
-      --critical-border:#5C2A20; --chip-bg:#1F1A15;
+      --paper:#121211; --surface:#1D1D1B; --panel:#262624; --border:#3A3936;
+      --text:#FFFFFF; --text-muted:#BDB8B0; --amber-wash:#3A2A10;
+      --red-wash:#3A1714; --mark:#7A4A00; --chip-bg:#1D1D1B;
       --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 8px 20px rgba(0,0,0,0.35);
     }
   }
   :root[data-theme="dark"]{
-    --ink:#F2ECE3; --paper:#161210; --surface:#1F1A15; --surface-2:#28211A;
-    --border:#3A3025; --amber:#FFB020; --amber-deep:#FFC85A; --amber-wash:#3A2A12;
-    --text:#F2ECE3; --text-muted:#B8AA98; --critical:#FF8A7A; --critical-bg:#3A1913;
-    --critical-border:#5C2A20; --chip-bg:#1F1A15;
+    --paper:#121211; --surface:#1D1D1B; --panel:#262624; --border:#3A3936;
+    --text:#FFFFFF; --text-muted:#BDB8B0; --amber-wash:#3A2A10;
+    --red-wash:#3A1714; --mark:#7A4A00; --chip-bg:#1D1D1B;
     --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 8px 20px rgba(0,0,0,0.35);
   }
   *{box-sizing:border-box;}
   html{-webkit-text-size-adjust:100%;}
-  body{margin:0; background:var(--paper); color:var(--text); font-family:"Inter",system-ui,sans-serif; -webkit-font-smoothing:antialiased;}
-  h1,h2,h3,.display{font-family:"Oswald",system-ui,sans-serif; text-transform:uppercase; letter-spacing:0.01em; text-wrap:balance;}
-  .mono{font-family:"JetBrains Mono",ui-monospace,monospace;}
-  a{color:var(--amber-deep);}
+  body{margin:0; background:var(--paper); color:var(--text); font-family:"Montserrat",system-ui,sans-serif; font-weight:500; font-size:15px; line-height:1.55; -webkit-font-smoothing:antialiased;}
+  h1,h2,h3{font-family:"Montserrat",system-ui,sans-serif; font-weight:700; text-wrap:balance; margin:0;}
+  a{color:inherit; text-decoration-color:var(--amber); text-decoration-thickness:2px; text-underline-offset:0.18em;}
+  a:focus-visible, button:focus-visible, input:focus-visible{outline:3px solid var(--amber); outline-offset:2px;}
   .wrap{max-width:1120px; margin:0 auto; padding:0 20px 64px;}
 
-  header.top{
-    background:linear-gradient(180deg, #241F1A 0%, #000 130%);
-    color:#FBF7F1; padding:28px 20px 22px; border-bottom:4px solid var(--amber);
-  }
-  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) header.top{ background:linear-gradient(180deg,#0D0A08 0%,#000 140%);} }
-  :root[data-theme="dark"] header.top{ background:linear-gradient(180deg,#0D0A08 0%,#000 140%);}
-  header.top .inner{max-width:1080px; margin:0 auto;}
-  .eyebrow{font-family:"Oswald",system-ui,sans-serif; font-size:13px; letter-spacing:0.14em; color:var(--amber); text-transform:uppercase; margin:0 0 6px;}
-  header.top h1{font-size:clamp(28px,5vw,40px); margin:0 0 6px; font-weight:700; color:#FBF7F1;}
-  header.top p.sub{margin:0; color:#D8CFC3; font-size:15px; max-width:60ch; line-height:1.5;}
+  /* Header */
+  header.top{background:var(--black); color:#FFFFFF; padding:24px 20px 22px; border-bottom:6px solid var(--amber);}
+  header.top .inner{max-width:1080px; margin:0 auto; display:flex; gap:18px; align-items:center;}
+  header.top .crest{width:92px; height:92px; flex:none;}
+  header.top .txt{min-width:0; display:flex; flex-direction:column; gap:6px;}
+  .values{font-weight:800; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; color:var(--amber); margin:0;}
+  header.top h1{font-size:clamp(28px,5.5vw,42px); font-weight:800; text-transform:uppercase; letter-spacing:0.01em; line-height:1.05; color:#FFFFFF;}
+  header.top p.sub{margin:0; color:#E4E0DA; font-size:15px; max-width:62ch; line-height:1.5;}
+  @media (max-width:520px){ header.top .inner{align-items:flex-start;} header.top .crest{width:68px; height:68px;} .values{font-size:12px;} }
 
-  .controls{
-    position:sticky; top:0; z-index:5; background:var(--paper);
-    border-bottom:1px solid var(--border); padding:14px 20px; margin-bottom:6px;
-  }
+  /* Search */
+  .controls{position:sticky; top:0; z-index:5; background:var(--paper); border-bottom:1px solid var(--border); padding:14px 20px 12px; box-shadow:0 2px 8px rgba(0,0,0,0.04);}
   .controls .inner{max-width:1080px; margin:0 auto; display:flex; flex-direction:column; gap:10px;}
-  .search{
-    display:flex; align-items:center; gap:8px; background:var(--surface);
-    border:1.5px solid var(--border); border-radius:10px; padding:9px 12px;
-  }
-  .search svg{flex:none; opacity:0.55;}
-  .search input{
-    border:none; outline:none; background:transparent; color:var(--text);
-    font-family:"Inter",system-ui,sans-serif; font-size:16px; width:100%;
-  }
+  .search{display:flex; align-items:center; gap:10px; background:var(--surface); border:2px solid var(--black); border-radius:10px; padding:10px 12px;}
+  :root[data-theme="dark"] .search{border-color:var(--amber);}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .search{border-color:var(--amber);} }
+  .search svg{flex:none; color:var(--amber);}
+  .search input{border:none; outline:none; background:transparent; color:var(--text); font:inherit; font-size:16px; width:100%; min-width:0;}
   .search input::placeholder{color:var(--text-muted);}
+  .search .clear{flex:none; font:inherit; font-size:13px; font-weight:600; border:1px solid var(--border); background:var(--panel); color:var(--text); border-radius:999px; padding:3px 10px; cursor:pointer;}
   .chips{display:flex; flex-wrap:wrap; gap:8px;}
-  .chip{
-    font-family:"Oswald",system-ui,sans-serif; font-size:12.5px; letter-spacing:0.03em; text-transform:uppercase;
-    border:1.5px solid var(--border); background:var(--chip-bg); color:var(--text-muted);
-    padding:6px 12px; border-radius:999px; cursor:pointer; transition:all .15s ease; user-select:none;
-  }
-  .chip:hover{border-color:var(--amber-deep); color:var(--text);}
-  .chip[aria-pressed="true"]{background:var(--ink); border-color:var(--ink); color:var(--paper);}
+  .chip{font:inherit; font-size:12px; font-weight:700; letter-spacing:0.04em; text-transform:uppercase; border:1.5px solid var(--border); background:var(--chip-bg); color:var(--text-muted); padding:6px 12px; border-radius:999px; cursor:pointer; user-select:none;}
+  .chip:hover{border-color:var(--amber); color:var(--text);}
+  .chip[aria-pressed="true"]{background:var(--amber); border-color:var(--amber); color:var(--black);}
   @media (max-width:640px){
     .controls{padding:10px 0;}
     .controls .search{margin:0 16px;}
@@ -84,241 +76,398 @@
     .wrap{padding:0 16px 48px;}
   }
 
-  .safety{
-    margin:22px 0 8px; border:1.5px solid var(--critical-border); background:var(--critical-bg);
-    border-radius:14px; padding:16px 18px; display:flex; gap:14px; align-items:flex-start; box-shadow:var(--shadow);
-  }
-  .safety svg{flex:none; color:var(--critical); margin-top:2px;}
-  .safety .label{font-family:"Oswald",system-ui,sans-serif; font-size:12.5px; letter-spacing:0.1em; text-transform:uppercase; color:var(--critical); margin:0 0 3px;}
-  .safety h3{margin:0 0 4px; font-size:19px; color:var(--text);}
+  /* Where to look */
+  .finder{margin:18px 0 6px; display:flex; flex-direction:column; gap:10px;}
+  .finder h2{font-size:22px; font-weight:800;}
+  .finder .hint{margin:0; color:var(--text-muted); font-size:14px;}
+  .tries{display:flex; flex-wrap:wrap; gap:8px;}
+  .try{font:inherit; font-size:13px; font-weight:600; background:var(--amber-wash); color:var(--text); border:none; border-radius:999px; padding:6px 12px; cursor:pointer;}
+  .results{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:8px;}
+  .result{display:block; width:100%; text-align:left; font:inherit; color:inherit; background:var(--surface); border:1.5px solid var(--border); border-left:6px solid var(--amber); border-radius:10px; padding:12px 14px; cursor:pointer; text-decoration:none;}
+  .result:hover{border-color:var(--amber);}
+  .result.hub{border-left-color:var(--blue);}
+  .result.crit{border-left-color:var(--red);}
+  .result .where{display:block; font-size:12px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:var(--text-muted); margin-bottom:2px;}
+  .result .ttl{display:block; font-size:17px; font-weight:700; line-height:1.3;}
+  .result .snip{display:block; margin-top:4px; font-size:14px; color:var(--text-muted); line-height:1.5;}
+  .result .snip b{color:var(--text);}
+  mark{background:var(--mark); color:inherit; border-radius:3px; padding:0 2px;}
+
+  /* Emergency banner */
+  .safety{margin:22px 0 8px; border:1.5px solid var(--red); border-left-width:8px; background:var(--red-wash); border-radius:12px; padding:16px 18px; display:flex; gap:14px; align-items:flex-start;}
+  .safety svg{flex:none; color:var(--red); margin-top:2px;}
+  .safety .label{font-size:12px; font-weight:800; letter-spacing:0.08em; text-transform:uppercase; margin:0 0 4px;}
+  .safety h3{margin:0 0 4px; font-size:21px; font-weight:800;}
   .safety p{margin:0; color:var(--text-muted); font-size:14px; line-height:1.5;}
-  .safety button{
-    font-family:"Oswald",system-ui,sans-serif; font-size:12.5px; text-transform:uppercase; letter-spacing:0.04em;
-    background:var(--critical); color:#fff; border:none; border-radius:8px; padding:9px 14px;
-    cursor:pointer; flex:none; align-self:center;
-  }
-  :root[data-theme="dark"] .safety button{color:#161210;}
-  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .safety button{color:#161210;} }
+  .safety button{font:inherit; font-size:13px; font-weight:800; text-transform:uppercase; letter-spacing:0.04em; background:var(--black); color:#FFFFFF; border:none; border-radius:8px; padding:10px 16px; cursor:pointer; flex:none; align-self:center;}
+  :root[data-theme="dark"] .safety button{background:var(--red); color:var(--black);}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .safety button{background:var(--red); color:var(--black);} }
 
+  /* Cards */
   section.grid-section{margin-top:22px;}
-  .section-label{font-family:"Oswald",system-ui,sans-serif; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:var(--text-muted); margin:0 0 12px; display:flex; align-items:center; gap:10px;}
-  .section-label::after{content:""; flex:1; height:1px; background:var(--border);}
-
-  .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr)); gap:14px; align-items:start;}
-  .card{
-    background:var(--surface); border:1.5px solid var(--border); border-radius:14px;
-    box-shadow:var(--shadow); overflow:hidden; transition:border-color .15s ease;
-  }
-  .card.open{border-color:var(--amber-deep);}
-  .card-head{
-    width:100%; text-align:left; background:none; border:none; cursor:pointer;
-    padding:16px 16px 14px; display:flex; gap:12px; align-items:flex-start; color:inherit; font:inherit;
-  }
-  .card-head:focus-visible{outline:2px solid var(--amber-deep); outline-offset:-2px;}
-  .icon-badge{
-    flex:none; width:38px; height:38px; border-radius:10px; background:var(--amber-wash);
-    display:flex; align-items:center; justify-content:center; font-size:18px;
-  }
+  .section-label{font-size:13px; font-weight:800; letter-spacing:0.08em; text-transform:uppercase; color:var(--text-muted); margin:0 0 12px; display:flex; align-items:center; gap:10px;}
+  .section-label::after{content:""; flex:1; height:2px; background:var(--amber);}
+  .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr)); gap:14px; align-items:start;}
+  .card{background:var(--surface); border:1.5px solid var(--border); border-radius:12px; box-shadow:var(--shadow); overflow:hidden; scroll-margin-top:150px;}
+  .card.open{border-color:var(--amber);}
+  .card.flash{animation:flash 1.6s ease;}
+  @keyframes flash{0%,40%{box-shadow:0 0 0 4px var(--amber);} 100%{box-shadow:var(--shadow);}}
+  .card-head{width:100%; text-align:left; background:none; border:none; cursor:pointer; padding:16px 16px 14px; display:flex; gap:12px; align-items:flex-start; color:inherit; font:inherit;}
+  .card-head:focus-visible{outline:3px solid var(--amber); outline-offset:-3px;}
+  .icon-badge{flex:none; width:40px; height:40px; border-radius:10px; background:var(--amber-wash); display:flex; align-items:center; justify-content:center; font-size:19px;}
+  .card.critical .icon-badge{background:var(--red-wash);}
   .card-head .body{flex:1; min-width:0;}
-  .cat-label{font-family:"Oswald",system-ui,sans-serif; font-size:10.5px; letter-spacing:0.09em; text-transform:uppercase; color:var(--amber-deep); margin:0 0 3px;}
-  .card-head h3{font-family:"Inter",system-ui,sans-serif; text-transform:none; letter-spacing:0; font-size:16.5px; font-weight:700; margin:0 0 4px; line-height:1.3;}
-  .card-head p{margin:0; color:var(--text-muted); font-size:13.5px; line-height:1.45;}
-  .chev{flex:none; margin-top:8px; transition:transform .18s ease; color:var(--text-muted);}
-  .card.open .chev{transform:rotate(180deg); color:var(--amber-deep);}
-
+  .cat-label{font-size:11px; font-weight:800; letter-spacing:0.08em; text-transform:uppercase; color:var(--text-muted); margin:0 0 4px;}
+  .card-head h3{font-size:21px; font-weight:700; line-height:1.25; margin:0 0 5px;}
+  .card-head p{margin:0; color:var(--text-muted); font-size:14px; line-height:1.45;}
+  .chev{flex:none; margin-top:10px; transition:transform .18s ease; color:var(--text-muted);}
+  .card.open .chev{transform:rotate(180deg); color:var(--amber);}
   .card-body{max-height:0; overflow:hidden; transition:max-height .22s ease;}
-  .card-body .inner{padding:14px 16px 18px 66px; border-top:1px solid var(--border);}
+  .card-body .inner{padding:14px 16px 18px 68px; border-top:1px solid var(--border);}
   @media (max-width:480px){ .card-body .inner{padding-left:16px;} }
   .card-body ul{margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:9px;}
-  .card-body li{font-size:14px; line-height:1.5; padding-left:16px; position:relative; overflow-wrap:anywhere;}
-  .card-body li::before{content:"—"; position:absolute; left:0; color:var(--amber-deep);}
+  .card-body li{font-size:14px; line-height:1.55; padding-left:16px; position:relative; overflow-wrap:anywhere;}
+  .card-body li::before{content:""; position:absolute; left:0; top:0.62em; width:7px; height:7px; border-radius:2px; background:var(--amber);}
   .card-body li.has-table{padding-left:0;}
   .card-body li.has-table::before{content:none;}
   .card-body li b{font-weight:700;}
+  .card-body li.hit{background:var(--amber-wash); border-radius:6px; margin:0 -6px; padding-right:6px; padding-left:22px;}
+  .card-body li.hit::before{left:6px;}
   .card-body table{width:100%; border-collapse:collapse; margin:6px 0; font-size:13.5px;}
-  .card-body table th, .card-body table td{text-align:left; padding:5px 8px; border-bottom:1px solid var(--border); font-variant-numeric:tabular-nums;}
-  .card-body table th{font-family:"Oswald",system-ui,sans-serif; font-size:11px; letter-spacing:0.05em; text-transform:uppercase; color:var(--text-muted);}
-  .tip{margin:12px 0 0; font-size:13px; color:var(--text-muted); font-style:italic;}
-  .contact-line{
-    margin-top:12px; padding-top:12px; border-top:1px dashed var(--border);
-    font-size:13px; color:var(--text-muted); display:flex; flex-wrap:wrap; gap:6px 18px;
-  }
-  .contact-line a{font-weight:600; overflow-wrap:anywhere;}
+  .card-body table th, .card-body table td{text-align:left; padding:6px 8px; border-bottom:1px solid var(--border); font-variant-numeric:tabular-nums;}
+  .card-body table th{font-size:11px; font-weight:800; letter-spacing:0.06em; text-transform:uppercase; color:var(--text-muted);}
+  .tip{margin:12px 0 0; font-size:13px; color:var(--text-muted); font-style:italic; font-weight:300;}
+  .contact-line{margin-top:12px; padding-top:12px; border-top:1px dashed var(--border); font-size:13px; color:var(--text-muted); display:flex; flex-wrap:wrap; gap:6px 18px;}
+  .contact-line a{font-weight:700; color:var(--text); overflow-wrap:anywhere;}
 
-  .empty{text-align:center; padding:48px 20px; color:var(--text-muted);}
-  .empty h3{font-family:"Inter",system-ui,sans-serif; text-transform:none; letter-spacing:0; font-size:16px; margin:0 0 6px; color:var(--text);}
+  .empty{text-align:center; padding:40px 20px; color:var(--text-muted);}
+  .empty h3{font-size:21px; margin:0 0 6px; color:var(--text);}
 
-  footer{max-width:1080px; margin:36px auto 0; padding:18px 0 0; border-top:1px solid var(--border); color:var(--text-muted); font-size:12.5px; line-height:1.6;}
+  footer{max-width:1080px; margin:36px auto 0; padding:18px 0 0; border-top:2px solid var(--amber); color:var(--text-muted); font-size:13px; line-height:1.6; display:flex; gap:14px; align-items:flex-start;}
+  footer img{width:44px; height:44px; flex:none;}
 </style>
 </head>
 <body>
 
 <header class="top">
   <div class="inner">
-    <p class="eyebrow">Kingswood United FC · Coach &amp; Manager Reference</p>
-    <h1>Coach Pocket Guide</h1>
-    <p class="sub">The Handbook, boiled down to what you actually need mid-week or on the touchline. Tap any card to open it — search or filter to get there faster.</p>
+    <img class="crest" src="img/crest.png" alt="Kingswood United crest" width="92" height="92">
+    <div class="txt">
+      <p class="values">Out Work. Out Think. Out Play.</p>
+      <h1>Coach Pocket Guide</h1>
+      <p class="sub">The Handbook, boiled down to what you need mid-week or on the touchline. Type what you're looking for and we'll show you where to look.</p>
+    </div>
   </div>
 </header>
 
 <div class="controls">
   <div class="inner">
     <label class="search" for="search">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      <input id="search" type="search" placeholder="Search e.g. “release a player”, “defibrillator”, “subs”…" autocomplete="off" aria-label="Search the pocket guide">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input id="search" type="text" enterkeyhint="search" placeholder="What are you looking for? e.g. “how do I release a player”" autocomplete="off" aria-label="Search the pocket guide" aria-controls="finder">
+      <button class="clear" id="clearBtn" type="button" hidden>Clear</button>
     </label>
     <div class="chips" id="chips" role="group" aria-label="Filter by topic"></div>
   </div>
 </div>
 
 <div class="wrap">
+  <section class="finder" id="finder" aria-live="polite">
+    <div id="finderEmpty">
+      <p class="hint">Popular searches:</p>
+      <div class="tries" id="tries"></div>
+    </div>
+    <div id="finderResults" hidden>
+      <h2 id="finderTitle">Where to look</h2>
+      <ul class="results" id="results"></ul>
+    </div>
+  </section>
+
   <div class="safety" id="safetyCard">
     <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4Z"/><line x1="12" y1="8" x2="12" y2="13"/><line x1="12" y1="16.5" x2="12" y2="16.51"/></svg>
     <div style="flex:1">
-      <p class="label">Always here — Emergency &amp; Facilities</p>
-      <h3>999 emergency · Kinloss defibrillator code C159X</h3>
+      <p class="label">Always here — Emergency</p>
+      <h3>999 · Kinloss defibrillator code C159X</h3>
       <p>Ambulance access, what to do in the first minutes, and who to call.</p>
     </div>
     <button id="safetyBtn" type="button">Open</button>
   </div>
 
   <section class="grid-section">
-    <p class="section-label" id="resultLabel" aria-live="polite">All topics</p>
+    <p class="section-label" id="resultLabel">All topics</p>
     <div class="grid" id="grid"></div>
     <div class="empty" id="empty" hidden>
-      <h3>No matches</h3>
-      <p>Try a different word, or clear the filter above.</p>
+      <h3>Nothing found</h3>
+      <p>Try a different word, clear the filter above, or ask your Age Phase Lead. For anything safeguarding-related, use the <a href="https://kingswood-united-fc.github.io/safeguarding-hub/">Safeguarding Hub</a>.</p>
     </div>
   </section>
 
   <footer>
-    Built from the Kingswood United FC Handbook (v2.1), the Emergency Action Plan (KUFC-EAP-01 v2.0), club policies and the Coach &amp; Volunteer Development Strategy. For anything not covered here, ask your Age Phase Lead, check My Club Hub, or email <a href="mailto:secretary@kingswoodunited.co.uk">secretary@kingswoodunited.co.uk</a>. This guide is a quick-reference summary, not a replacement for the full Handbook or club policies. Maintained by Tom Lee, Vice-Chair — last updated October 2026.
+    <img src="img/crest.png" alt="" width="44" height="44">
+    <div>Built from the Kingswood United FC Handbook (v2.1), the Emergency Action Plan (KUFC-EAP-01 v2.0), club policies and the Coach &amp; Volunteer Development Strategy. For anything not covered here, ask your Age Phase Lead, check My Club Hub, or email <a href="mailto:secretary@kingswoodunited.co.uk">secretary@kingswoodunited.co.uk</a>. This guide is a quick-reference summary, not a replacement for the full Handbook or club policies. Maintained by Tom Lee, Vice-Chair — last updated October 2026.</div>
   </footer>
 </div>
 
 <!-- All the guide's wording lives in topics.js. Edit that file to change content. -->
 <script src="topics.js"></script>
 <script>
-const CATS = [...new Set(DATA.map(d=>d.cat))];
-let activeCat = "All";
-let query = "";
+/* ---------- Search: sections of the Safeguarding Hub it can point to ---------- */
+const HUB = "https://kingswood-united-fc.github.io/safeguarding-hub/";
+const HUB_SECTIONS = [
+  { title:"Report a safeguarding concern", anchor:"report", text:"report concern worried form online welfare tell us safeguarding incident" },
+  { title:"Who to tell — welfare contacts by age group", anchor:"contacts", text:"welfare officer contacts phone number age group luke alex becki emma charlotte welfare team who to tell" },
+  { title:"Concern about the welfare team or a committee member", anchor:"outside", text:"concern about welfare officer committee member coach chair county fa nspcc whistleblowing outside the club" },
+  { title:"What happens after a concern is raised", anchor:"next", text:"what happens next process escalation green amber red referred county fa social care police acknowledgement" },
+  { title:"If a child tells you something", anchor:"told", text:"disclosure child tells you something secret listen write down report same day" },
+  { title:"Information for players", anchor:"players", text:"player childline ceop online worried upset" },
+  { title:"Course for parents and carers", anchor:"learn", text:"parents carers course safeguarding awareness learning" },
+  { title:"Concerns about an adult", anchor:"adults", text:"adult vulnerable adult at risk disabled player open age adult social care" },
+  { title:"All club and CIO policies", anchor:"documents", text:"policy policies code of conduct grassroots code whistleblowing bullying harassment complaints equality social media data protection confidentiality" },
+  { title:"Questions and complaints (non-safeguarding)", anchor:"other", text:"complaint question committee selection playing time" }
+];
 
-const chipsEl = document.getElementById("chips");
-const grid = document.getElementById("grid");
-const empty = document.getElementById("empty");
-const resultLabel = document.getElementById("resultLabel");
-const searchEl = document.getElementById("search");
+/* ---------- Search: words that mean the same thing ---------- */
+const SYNONYMS = [
+  ["defib","defibrillator","aed","cardiac","cpr","heart"],
+  ["emergency","999","ambulance","injury","injured","hurt","accident","hospital","a&e","first aid","casualty"],
+  ["kit","shirt","shirts","shorts","socks","strip","jersey","match day kit","goalkeeper"],
+  ["shop","order","buy","purchase","merch","training wear","hoodie","jacket","club shop"],
+  ["pitch","pitches","venue","booking","book","fixture","fixtures","slot","home game"],
+  ["referee","ref","refs","official"],
+  ["subs","fees","fee","money","pay","payment","cost","price","invoice","reimburse","reimbursement","treasurer","finance","budget"],
+  ["release","releasing","drop","remove","cut","let go","leave","leaving","quit","de-register","deregister"],
+  ["transfer","approach","another club","notice of approach","poach"],
+  ["dbs","background check","criminal record","enhanced dbs"],
+  ["course","courses","qualification","qualified","badge","certificate","learning","cpd","education"],
+  ["safeguarding","welfare","concern","worried","worry","abuse","report","disclosure","wellbeing"],
+  ["concussion","head","head injury","return to play"],
+  ["trial","trialist","trialists","new player trial"],
+  ["sponsor","sponsors","sponsorship"],
+  ["missing","lost child","missing child"],
+  ["thunder","lightning","weather","storm"],
+  ["mentor","mentoring","support","sounding board","coach developer"],
+  ["bursary","funding","grant"],
+  ["whatsapp","comms","communication","message","social"],
+  ["mch","my club hub"],
+  ["register","registration","registering","sign","signing","new player","fan"],
+  ["squad","squad size","squad sizes","many","numbers","maximum","minimum"],
+  ["game time","minutes","playing time","50%"],
+  ["behaviour","conduct","discipline","warning","suspension","sin bin"],
+  ["access","keypad","code","gate","container","lock","key"],
+  ["session","sessions","drills","plans","coachcast","podcast","ideas"],
+  ["team leaving","whole team","disaffiliate","leave the club"],
+  ["escalation","pathway","green","amber","red"]
+];
+const STOP = new Set("a an and are as at be can do does for from get got have how i if in is it me my of on or our should the to we what when where which who why will with you your about need much many there this that want".split(" ").filter(x => x !== "many"));
+
+/* ---------- Search engine ---------- */
+const norm = s => s.toLowerCase().replace(/&amp;/g,"&").replace(/[‘’]/g,"'").replace(/[“”]/g,'"');
+const plain = html => { const t=document.createElement("div"); t.innerHTML=html; return t.textContent; };
+const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+const stem = w => w.length>4 ? w.replace(/(ing|ers|er|ed|es|s|e)$/,"") : w;
+
+function expand(tok){
+  const set = new Set([tok, stem(tok)]);
+  for (const g of SYNONYMS) {
+    if (g.some(x => x===tok || stem(x)===stem(tok) || (tok.length>=4 && x.startsWith(tok)))) g.forEach(x=>set.add(x));
+  }
+  return [...set].filter(Boolean);
+}
+function parse(q){
+  const raw = norm(q).replace(/[^a-z0-9&%' -]/g," ").trim();
+  if (!raw) return [];
+  const toks = raw.split(/\s+/).filter(t => t && !STOP.has(t));
+  const groups = (toks.length ? toks : raw.split(/\s+/)).map(t => {
+    const terms = expand(t);
+    const own = [...new Set([t, stem(t)])];
+    // Short words (ref, dbs, fa) must match a whole word; longer ones match the start of a word.
+    const pat = list => "(^|[^a-z0-9])(" + list.map(x => esc(x) + (x.length < 4 ? "(?![a-z0-9])" : "")).join("|") + ")";
+    return { tok:t, terms, re:new RegExp(pat(terms), "i"), exact:new RegExp(pat(own), "i") };
+  });
+  return groups;
+}
+
+/* Build a searchable record for every card line and every hub section */
+const RECORDS = [];
+DATA.forEach(card => {
+  const fields = { title:norm(card.title), summary:norm(card.summary), cat:norm(card.cat) };
+  const lines = card.items.map(it => { const raw = plain(it); return { raw, text:norm(raw) }; });
+  if (card.tip) lines.push({ raw:"Tip: "+card.tip, text:norm(card.tip), tip:true });
+  RECORDS.push({ kind:"card", card, fields, lines });
+});
+HUB_SECTIONS.forEach(h => RECORDS.push({ kind:"hub", h, fields:{ title:norm(h.title), summary:norm(h.text), cat:"safeguarding hub" }, lines:[] }));
+
+function scoreRecord(r, groups){
+  let score = 0, matched = 0, bestLine = null, bestLineHits = 0;
+  // A word the person typed counts fully; a word that only matches via a synonym counts half.
+  const w = (g, text) => g.exact.test(text) ? 1 : g.re.test(text) ? 0.5 : 0;
+  for (const g of groups) {
+    let s = 0;
+    s += 8 * w(g, r.fields.title);
+    s += 6 * w(g, r.fields.summary);
+    s += 2 * w(g, r.fields.cat);
+    let lh = 0; for (const l of r.lines) lh += w(g, l.text);
+    s += Math.min(lh, 3) * 2;
+    if (s > 0) { matched++; score += s; }
+  }
+  for (const [i,l] of r.lines.entries()) {
+    const n = groups.filter(g => g.re.test(l.text)).length;
+    if (n > bestLineHits) { bestLineHits = n; bestLine = i; }
+  }
+  if (r.kind==="card" && r.card.critical) score += 1;
+  return { r, score, matched, bestLine };
+}
+
+function search(q){
+  const groups = parse(q);
+  if (!groups.length) return { groups, hits:[] };
+  const need = Math.max(1, Math.ceil(groups.length * 0.5));
+  let hits = RECORDS.map(r => scoreRecord(r, groups))
+    .filter(x => x.matched >= need && x.score > 0)
+    .sort((a,b) => b.matched - a.matched || b.score - a.score);
+  // Drop weak tail results that only share a passing word with the search
+  if (hits.length) { const top = hits[0]; hits = hits.filter(h => h.matched === top.matched ? h.score >= top.score * 0.4 : h.score >= top.score * 0.5); }
+  return { groups, hits };
+}
+
+function highlight(text, groups){
+  let out = text.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+  const all = groups.flatMap(g => g.terms).filter(t => t.length > 1).sort((a,b)=>b.length-a.length);
+  if (!all.length) return out;
+  const re = new RegExp("(" + all.map(t => esc(t.replace(/&/g,"&amp;"))).join("|") + ")", "gi");
+  return out.replace(re, "<mark>$1</mark>");
+}
+function snippet(text, groups){
+  const t = text.replace(/\s+/g," ").trim();
+  let first = t.length;
+  for (const g of groups) { const m = t.match(g.re); if (m && m.index < first) first = m.index; }
+  const start = Math.max(0, first - 60), end = Math.min(t.length, start + 200);
+  return (start>0?"…":"") + t.slice(start, end) + (end<t.length?"…":"");
+}
+
+/* ---------- Page ---------- */
+const CATS = [...new Set(DATA.map(d=>d.cat))];
+let activeCat = "All", query = "", lastSearch = { groups:[], hits:[] };
+const $ = id => document.getElementById(id);
+const chipsEl=$("chips"), grid=$("grid"), empty=$("empty"), resultLabel=$("resultLabel"), searchEl=$("search");
+
+const TRIES = ["release a player","defibrillator","book a pitch","order kit","report a concern","referee fees","DBS","concussion","trialist","FA courses"];
+TRIES.forEach(t => { const b=document.createElement("button"); b.className="try"; b.type="button"; b.textContent=t; b.addEventListener("click",()=>{ searchEl.value=t; onSearch(); searchEl.focus(); }); $("tries").appendChild(b); });
 
 function renderChips(){
-  const cats = ["All", ...CATS];
   chipsEl.innerHTML = "";
-  cats.forEach(c=>{
-    const b = document.createElement("button");
-    b.className = "chip"; b.type="button"; b.textContent = c;
+  ["All", ...CATS].forEach(c=>{
+    const b=document.createElement("button"); b.className="chip"; b.type="button"; b.textContent=c;
     b.setAttribute("aria-pressed", String(c===activeCat));
-    b.addEventListener("click", ()=>{ activeCat = c; render(); });
+    b.addEventListener("click", ()=>{ activeCat=c; render(); });
     chipsEl.appendChild(b);
   });
 }
 
-function plain(html){
-  const t = document.createElement("div");
-  t.innerHTML = html;
-  return t.textContent;
-}
-
-function matches(card){
-  const inCat = activeCat==="All" || card.cat===activeCat;
-  if(!inCat) return false;
-  if(!query) return true;
-  const hay = plain(card.title+" "+card.summary+" "+card.cat+" "+card.items.join(" ")+" "+(card.tip||"")).toLowerCase();
-  return hay.includes(query.trim().toLowerCase());
-}
-
-function cardEl(card){
-  const wrap = document.createElement("article");
-  wrap.className = "card";
-  wrap.id = "card-"+card.id;
-  const head = document.createElement("button");
-  head.className = "card-head"; head.type = "button";
-  head.setAttribute("aria-expanded","false");
-  head.innerHTML = `
-    <div class="icon-badge" aria-hidden="true">${card.icon}</div>
-    <div class="body">
-      <p class="cat-label">${card.cat}</p>
-      <h3>${card.title}</h3>
-      <p>${card.summary}</p>
-    </div>
-    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-  `;
-  const bodyWrap = document.createElement("div");
-  bodyWrap.className = "card-body";
-  const inner = document.createElement("div");
-  inner.className = "inner";
-  const ul = document.createElement("ul");
-  card.items.forEach(it=>{
-    const li = document.createElement("li");
-    if(it.trim().startsWith("<table")) li.className = "has-table";
-    li.innerHTML = it;
-    ul.appendChild(li);
+function cardEl(card, hitLine){
+  const wrap=document.createElement("article");
+  wrap.className="card" + (card.critical ? " critical" : ""); wrap.id="card-"+card.id;
+  const head=document.createElement("button"); head.className="card-head"; head.type="button"; head.setAttribute("aria-expanded","false");
+  head.innerHTML = `<div class="icon-badge" aria-hidden="true">${card.icon}</div>
+    <div class="body"><p class="cat-label">${card.cat}</p><h3>${card.title}</h3><p>${card.summary}</p></div>
+    <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>`;
+  const bodyWrap=document.createElement("div"); bodyWrap.className="card-body";
+  const inner=document.createElement("div"); inner.className="inner";
+  const ul=document.createElement("ul");
+  card.items.forEach((it,i)=>{
+    const li=document.createElement("li");
+    if (it.trim().startsWith("<table")) li.className="has-table";
+    if (i===hitLine) li.classList.add("hit");
+    li.innerHTML=it; ul.appendChild(li);
   });
   inner.appendChild(ul);
-  if(card.tip){
-    const tip = document.createElement("p");
-    tip.className = "tip";
-    tip.textContent = "Tip: " + card.tip;
-    inner.appendChild(tip);
-  }
-  if(card.contact){
-    const c = document.createElement("div");
-    c.className = "contact-line";
-    const a = document.createElement("a");
-    a.href = "mailto:" + card.contact;
-    a.textContent = card.contact;
-    c.append("✉️ ", a);
-    inner.appendChild(c);
-  }
+  if (card.tip){ const p=document.createElement("p"); p.className="tip"; p.textContent="Tip: "+card.tip; inner.appendChild(p); }
+  if (card.contact){ const c=document.createElement("div"); c.className="contact-line"; const a=document.createElement("a"); a.href="mailto:"+card.contact; a.textContent=card.contact; c.append("✉️ ", a); inner.appendChild(c); }
   bodyWrap.appendChild(inner);
   head.addEventListener("click", ()=>{
-    const isOpen = wrap.classList.toggle("open");
+    const isOpen=wrap.classList.toggle("open");
     head.setAttribute("aria-expanded", String(isOpen));
-    bodyWrap.style.maxHeight = isOpen ? bodyWrap.scrollHeight + "px" : "0px";
+    bodyWrap.style.maxHeight = isOpen ? bodyWrap.scrollHeight+"px" : "0px";
   });
-  wrap.appendChild(head);
-  wrap.appendChild(bodyWrap);
+  wrap.append(head, bodyWrap);
   return wrap;
+}
+
+function openCard(id, flash){
+  const el=$("card-"+id); if(!el) return;
+  if(!el.classList.contains("open")) el.querySelector(".card-head").click();
+  el.scrollIntoView({behavior:"smooth", block:"start"});
+  if(flash){ el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash"); }
+}
+
+function renderFinder(){
+  const has = query.trim().length > 0;
+  $("finderEmpty").hidden = has; $("finderResults").hidden = !has;
+  $("clearBtn").hidden = !has;
+  if (!has) return;
+  const list=$("results"); list.innerHTML="";
+  const hits = lastSearch.hits.slice(0, 6);
+  $("finderTitle").textContent = hits.length ? "Where to look" : "Nothing found";
+  if (!hits.length) {
+    const li=document.createElement("li"); li.className="hint";
+    li.innerHTML = `Try a different word, or ask your Age Phase Lead. For anything about a child's safety, use the <a href="${HUB}">Safeguarding Hub</a>.`;
+    list.appendChild(li); return;
+  }
+  hits.forEach(h=>{
+    const li=document.createElement("li"); let el;
+    if (h.r.kind==="hub") {
+      el=document.createElement("a"); el.className="result hub"; el.href=HUB+"#"+h.r.h.anchor; el.target="_blank"; el.rel="noopener";
+      el.innerHTML=`<span class="where">Safeguarding Hub ↗</span><span class="ttl">${highlight(h.r.h.title, lastSearch.groups)}</span>`;
+    } else {
+      const c=h.r.card; el=document.createElement("button"); el.type="button"; el.className="result"+(c.critical?" crit":"");
+      const line = h.bestLine!=null ? h.r.lines[h.bestLine].raw : c.summary;
+      el.innerHTML=`<span class="where">${c.cat} › card</span><span class="ttl">${c.icon} ${highlight(c.title, lastSearch.groups)}</span><span class="snip">${highlight(snippet(line, lastSearch.groups), lastSearch.groups)}</span>`;
+      el.addEventListener("click", ()=> openCard(c.id, true));
+    }
+    li.appendChild(el); list.appendChild(li);
+  });
 }
 
 function render(){
   renderChips();
-  const list = DATA.filter(matches);
+  const searching = query.trim().length > 0;
+  let cards;
+  if (searching) {
+    cards = lastSearch.hits.filter(h=>h.r.kind==="card").map(h=>({ card:h.r.card, hitLine: h.bestLine!=null && !h.r.lines[h.bestLine].tip ? h.bestLine : null }));
+  } else {
+    cards = DATA.map(card=>({ card, hitLine:null }));
+  }
+  if (activeCat!=="All") cards = cards.filter(c=>c.card.cat===activeCat);
   grid.innerHTML = "";
-  list.forEach(c=> grid.appendChild(cardEl(c)));
-  empty.hidden = list.length !== 0;
-  resultLabel.textContent = activeCat==="All" && !query ? `All topics (${DATA.length})` : `${list.length} match${list.length===1?"":"es"}`;
+  cards.forEach(c=>grid.appendChild(cardEl(c.card, c.hitLine)));
+  empty.hidden = cards.length !== 0;
+  resultLabel.textContent = searching ? `${cards.length} matching topic${cards.length===1?"":"s"}`
+    : activeCat==="All" ? `All topics (${DATA.length})` : `${cards.length} topic${cards.length===1?"":"s"}`;
+  renderFinder();
 }
 
-searchEl.addEventListener("input", (e)=>{ query = e.target.value; render(); });
-
-document.getElementById("safetyBtn").addEventListener("click", ()=>{
-  activeCat = "All"; query = ""; searchEl.value = "";
+let t;
+function onSearch(){
+  query = searchEl.value;
+  lastSearch = search(query);
   render();
-  requestAnimationFrame(()=>{
-    const critical = DATA.find(d=>d.critical);
-    const el = critical && document.getElementById("card-"+critical.id);
-    if(el){
-      const head = el.querySelector(".card-head");
-      if(!el.classList.contains("open")) head.click();
-      el.scrollIntoView({behavior:"smooth", block:"center"});
-    }
-  });
+  try { const u=new URL(location.href); if(query.trim()) u.searchParams.set("q",query.trim()); else u.searchParams.delete("q"); history.replaceState(null,"",u); } catch(e){}
+}
+searchEl.addEventListener("input", ()=>{ clearTimeout(t); t=setTimeout(onSearch, 120); });
+searchEl.addEventListener("keydown", e=>{
+  if (e.key==="Enter") { e.preventDefault(); onSearch(); const first=lastSearch.hits.find(h=>h.r.kind==="card"); if(first) openCard(first.r.card.id, true); }
+  if (e.key==="Escape") { searchEl.value=""; onSearch(); }
 });
+$("clearBtn").addEventListener("click", ()=>{ searchEl.value=""; onSearch(); searchEl.focus(); });
 
-window.addEventListener("resize", ()=>{
-  document.querySelectorAll(".card.open .card-body").forEach(b=>{ b.style.maxHeight = b.scrollHeight + "px"; });
+$("safetyBtn").addEventListener("click", ()=>{
+  activeCat="All"; searchEl.value=""; query=""; lastSearch={groups:[],hits:[]}; render();
+  requestAnimationFrame(()=>{ const c=DATA.find(d=>d.critical); if(c) openCard(c.id, true); });
 });
+window.addEventListener("resize", ()=>{ document.querySelectorAll(".card.open .card-body").forEach(b=>{ b.style.maxHeight=b.scrollHeight+"px"; }); });
 
-render();
+const startQ = new URLSearchParams(location.search).get("q");
+if (startQ) { searchEl.value = startQ; onSearch(); } else { render(); }
 </script>
 </body>
 </html>
